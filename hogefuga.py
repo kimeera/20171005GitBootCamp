@@ -5,3 +5,8 @@ def fuga():
 
 def hoge():
     print('huga')
+
+if __name__ == '__main__':
+    fuga()
+    hoge()
+
