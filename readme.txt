@@ -11,5 +11,3 @@
 8. git reset --hard master
 9. git merge fix/42
 10.git rebase -i -A~E
-
-
