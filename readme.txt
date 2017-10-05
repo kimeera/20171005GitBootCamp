@@ -12,4 +12,4 @@
 9. git merge fix/42
 10.git rebase -i -A~E
 
-
+12.git checkout fix/24
