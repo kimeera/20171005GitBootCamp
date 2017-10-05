@@ -6,7 +6,16 @@
 4. git commit -amend
 5. git branch fix/42
 6. gitk --all& リポジトリの状況可視化ツールを開く
-7. git checkout -b fix/42
-8. git reset --hard master
-9. git merge fix/42
-10.git rebase -i A~E
+
+# こんなときはどうする！？
+
+- コミットが消えた！（ように見える）
+  - reflogコマンドでHEADがたどった履歴を見れる→コミットを復活させることも可能
+  - ただしコミットはこまめに実施しましょう
+  - stashコマンド（コミットしないで保存しておくコマンド）は便利ですがreflogで見れないので使用を控えましょう
+
+- なかなかpushできない…
+  - pull --rebaseを活用しましょう
+
+- このバグはいつに！？
+  - git bisectを使う（＋自動テストコマンド）→特定の複数コミットごとに自動テストを実行してくれる
